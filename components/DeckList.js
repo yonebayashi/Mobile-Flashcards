@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     },
     header: {
         color: white,
-        fontSize: 26
+        fontSize: 25
     },
     body: {
         color: white,
