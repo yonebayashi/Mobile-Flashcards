@@ -6,7 +6,7 @@ import {green, red, white, blue, black, purple} from '../utils/colors'
 class QuizButtons extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <View>
                 { this.props.isComplete ?
                     <TouchableOpacity
                         style={[styles.btn, { backgroundColor: blue }]}
@@ -17,10 +17,9 @@ class QuizButtons extends Component {
                     </TouchableOpacity>
                     : <View>
                         <TouchableOpacity
-                            style={[styles.btn, { backgroundColor: purple }]}
                             onPress={this.props.handleShowAnswer}>
-                            <Text style={styles.btnText}>
-                                Show Answer
+                            <Text style={{ color: red }}>
+                                Answer
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -53,9 +52,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: 200,
-        marginTop: 20,
+        marginTop: 15,
         paddingTop: 20,
-        paddingBottom: 20
+        paddingBottom: 20,
+        borderRadius: 8
     },
     btnText: {
         color: white

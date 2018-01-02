@@ -7,7 +7,7 @@ class QuizCard extends Component {
     render() {
         const { cards, totalCards, score, completed, isComplete, showAnswer } = this.props
         return (
-            <View>
+            <View style={styles.container}>
                 { !(isComplete) ? (
                     <View>
                         <Text style={styles.text}>
