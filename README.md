@@ -8,6 +8,5 @@ A mobile flashcard app built with React Native
 4. Follow Expo guide to run the app on an Android emulator or an Android device
 
 ## Issues
-In case the app fails to open on the Expo mobile app, try opening the project  
-[Expo XDE desktop app](https://docs.expo.io/versions/latest/introduction/installation.html) 
+In case the app fails to open on the Expo mobile app, try opening the project in the [Expo XDE desktop app](https://docs.expo.io/versions/latest/introduction/installation.html) 
 through a tunnel. 
