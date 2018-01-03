@@ -10,6 +10,7 @@ import { black } from "../utils/colors";
 import { addDeck } from "../actions";
 import { saveDeckTitle } from "../utils/api";
 import { NavigationActions } from 'react-navigation';
+import { connect } from 'react-redux'
 
 class NewDeck extends Component {
     static navigationOptions = ({ navigation }) => ({
@@ -78,4 +79,4 @@ const styles = StyleSheet.create({
         color: black
     }
 })
-export default NewDeck
+export default connect()(NewDeck)

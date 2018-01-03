@@ -8,6 +8,7 @@ import {
 import { addCardToDeck } from "../utils/api";
 import { addCard } from "../actions";
 import { white, black } from '../utils/colors'
+import { connect } from 'react-redux'
 
 class AddCard extends Component {
     static navigationOptions = ({ navigation }) => ({
@@ -23,6 +24,11 @@ class AddCard extends Component {
 
         addCardToDeck(title,card)
         this.props.dispatch(addCard(title,card))
+
+        this.setState({
+            question: '',
+            answer: ''
+        })
     }
     render() {
         return (
@@ -82,4 +88,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default AddCard;
+export default connect()(AddCard)

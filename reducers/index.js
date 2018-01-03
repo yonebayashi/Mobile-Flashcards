@@ -25,7 +25,7 @@ function decks(state = dummyData, action) {
             return {
                 ...state,
                 [action.title]: {
-                    ...action.title,
+                    ...state[action.title],
                     cards: [
                         ...state[action.title].cards,
                         action.card
